@@ -42,9 +42,9 @@ const ChatContainer = () => {
       </div>
     );
   return (
-    <div className="flex flex-col flex-1">
+    <div className="flex flex-col justify-between flex-1 ">
       <ChatHeader />
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+      <div className="flex-2 sm:h-[80vh] h-[65vh] overflow-y-auto p-4 space-y-4">
         {messages.map((message) => (
           <div
             ref={messageEndRef}
@@ -84,7 +84,7 @@ const ChatContainer = () => {
         ))}
       </div>
 
-      <div className="absolute w-full bottom-0 right-0">
+      <div className="">
         <MessageInput />
       </div>
     </div>
