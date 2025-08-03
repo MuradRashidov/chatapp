@@ -84,7 +84,9 @@ const ChatContainer = () => {
         ))}
       </div>
 
-      <MessageInput />
+      <div className="absolute w-full bottom-0 right-0">
+        <MessageInput />
+      </div>
     </div>
   );
 };
